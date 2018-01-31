@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="http://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.2.8.min.css"/>
+
+<%= form_for @gossip, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :anonymous_author %>
+  <%= f.text_area :content %>
+  <%= f.submit "Créer" %>
+<% end %>
