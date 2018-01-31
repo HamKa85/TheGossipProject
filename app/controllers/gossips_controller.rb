@@ -27,6 +27,7 @@ class GossipsController < ApplicationController
   def destroy
     @gossip = Gossip.find(params[:id])
     @gossip.destroy
+    redirect_to gossips_path
   end
 
   def create
